@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,6 +24,9 @@
         
     </div>
     <div class="main-content" id="main-content">
+
+       
+
         <header>
             <h1>Analytics</h1>
             <div class="user">
@@ -89,6 +91,7 @@
                 <h3>Invoices</h3>
                 <canvas id="invoicesChart"></canvas>
             </div>
+            
         </div>
         <div class="customer-orders">
             <h3>Customer order</h3>
@@ -104,29 +107,29 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Wince</td>
-                        <td>Vellore</td>
+                        <td>Rohan</td>
+                        <td>Alaska</td>
                         <td>27.08.2022</td>
                         <td>Delivered</td>
                         <td>$483</td>
                     </tr>
                     <tr>
-                        <td>Princy</td>
-                        <td>Ranipet</td>
+                        <td>Ganesh</td>
+                        <td>kansas</td>
                         <td>24.08.2022</td>
                         <td>Processed</td>
                         <td>$812</td>
                     </tr>
                     <tr>
-                        <td>harshitha</td>
-                        <td>Chennai</td>
+                        <td>Nithya</td>
+                        <td>Georgia</td>
                         <td>20.08.2022</td>
                         <td>Cancelled</td>
                         <td>$1200</td>
                     </tr>
                     <tr>
-                        <td>jenifer</td>
-                        <td>bangalore</td>
+                        <td>Gayathri</td>
+                        <td>Florida</td>
                         <td>19.08.2022</td>
                         <td>Delivered</td>
                         <td>$1225</td>
@@ -139,20 +142,21 @@
 </body>
 </html>
 <style>
-:root {
+    :root {
     --bg-color: #ffffff;
-    --text-color: #000000;
-    --card-bg:rgb(31, 223, 236);
-    --chart-bg: rgb(81, 238, 199);
-    --customer-orders-bg: rgb(156, 156, 228);
+    --text-color: white;
+    --card-bg: black;
+    --chart-bg: black;
+    --customer-orders-bg: black;
 }
+
 
 [data-theme="dark"] {
     --bg-color: #121212;
     --text-color: #ffffff;
-    --card-bg: rgb(31, 223, 236);
-    --chart-bg: rgb(167, 233, 241);
-    --customer-orders-bg: rgb(156, 156, 228);
+    --card-bg: black;
+    --chart-bg: black;
+    --customer-orders-bg: black;
 }
 
 html, body {
@@ -171,7 +175,7 @@ body {
 
 .sidebar {
     width: 250px;
-    background: pink;
+    background: black;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -204,6 +208,7 @@ body {
     padding: 0;
     margin: 0;
     flex: 1;
+    
   
 }
 
@@ -212,6 +217,8 @@ body {
     padding: 10px;
     position: relative;
     background-color: whitesmoke;
+    
+    
 }
 
 .sidebar ul li a {
@@ -220,12 +227,13 @@ body {
     font-size: 22px;
     display: block;
     transition: background-color 0.3s;
+    color: black;
    
 }
 
 .sidebar ul li a:hover {
-    background-color: #0c0d0f;
-    color: #fff;
+    background-color: whitesmoke;
+    color: lightskyblue;
 }
 
 .sidebar ul li::after {
@@ -234,8 +242,8 @@ body {
     right: -20px;
     bottom: 0px;
     width: 200%;
-    border-bottom: 1px solid #0c0d0e;
-   
+    border-bottom: 1px solid black;
+ 
 }
 
 .sidebar .support {
@@ -278,6 +286,7 @@ header {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
+    color: black;
 }
 
 .user {
@@ -372,14 +381,14 @@ header {
 }
 
 .customer-orders th, .customer-orders td {
-    border: 1px solid #ccc;
+    border: 1px solid rgb(104, 219, 240);
     padding: 3px;
     text-align: left;
 }
 
-.customer-orders th {
-    background: #f5f5f5;
-}
+
+
+
 
 
 @media (max-width: 768px) {
@@ -410,7 +419,7 @@ header {
     }
 }
 .nav-item{
-color:black;
+color: white;
 font-size: 40px;
 }
 
